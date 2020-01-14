@@ -268,6 +268,8 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+# The block below allows us to run the script with the functions in any order that we want. 
+# Without this line and without the main execution of the script  being inside a function called main, 
+# then you wouldn't be able to run functions that are defined after the function is called. 
 if __name__ == "__main__":
     main()
